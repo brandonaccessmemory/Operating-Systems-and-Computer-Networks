@@ -1,5 +1,4 @@
 # Operating-Systems-and-Computer-Networks
-For this coursework you will implement a basic intrusion detection system. Coursework from the University of Warwick.
 For this coursework you will implement a basic intrusion detection system. This will test your understanding of TCP/IP protocols (networks) and threading (OS) as well as your ability to develop a non-trivial program in C. The coursework contributes 20% of the total marks towards the module.
 
 You have been provided with an application skeleton that is able to intercept (sniff) incoming packets and print them to the screen. The code uses the libpcap library to receive packets and strips the outer-most layer of the protocol stack. The goal of this coursework is to extend the skeleton to detect potentially malicious traffic in high-throughput networks. The key deliverables of this coursework and their associated weightings are as follows.
