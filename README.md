@@ -13,17 +13,17 @@ You must base your solution on the skeleton provided and it must be written enti
 Code Skeleton
 The coursework skeleton consists of several files, each with a specific purpose:
 
-Makefile
+Makefile -
 As this project spans multiple files we have provided a makefile to automate the build process for you. To compile your solution you should change into the src directory and then run the make command. This will build the application binary "../build/idsniff". Your solution should not require changes to this file.
 
-main.c
+main.c -
 This file hosts the application entry point. It also contains logic to parse command line arguments, allowing you to set the verbose flag and specify the network interface to sniff. Your solution should not require changes to this file.
 
-sniff.c
+sniff.c -
 This file contains the sniff function which captures packets from the network interface and passes them to your logic. A utility method called dump is also provided to output the raw packet data when debug mode is enabled. You should study this function carefully as it demonstrates how to parse a packet's ethernet header.
 
-analysis.c
+analysis.c -
 This file is where you should put code to analyse packets and identify threats. Your logic should be called from the analyse method which runs each time a packet is intercepted.
 
-dispatch.c
+dispatch.c -
 This file is where you should put code to parallelise your system. At the moment, the dispatch method simply calls the analyse method in analysis.c . This sequential, single-threaded behaviour should be replaced by code to distribute work over multiple threads.
